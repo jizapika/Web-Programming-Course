@@ -5,3 +5,5 @@
 Макет сайта.
 
 ![avatar](./template.bmp)
+bla-bla-bla
+blo-blo-blo
