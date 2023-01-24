@@ -6,6 +6,8 @@
     width: 100%;
     height: 10%;
     border: 1px solid #000;
+    position: sticky;
+    top: 0;
 }
 
 .header {
@@ -138,12 +140,23 @@
 .main {
     display: flex;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 20px;
     background-color: #37b391;
 }
 
+.main__about-user {
+    width: 85%;
+}
+
+.information-block {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
 .main__user-information {
-    min-width: 20%;
+    min-width: 25%;
+    max-width: 50%;
     width: min-content;
     border: 1px solid #000;
 }
@@ -190,11 +203,85 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
+    overflow: hidden;
+}
+
+.user-content__photos-paragraph {
+    padding-top: 10px;
 }
 
 .user-content__photos {
     height: 100px;
+    overflow-x: auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.user-content__photos::-webkit-scrollbar {
+    display: none;
+}
+
+.photos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.photos__photo-link {
+    height: 100%;
+}
+
+.photos__photo {
+    height: 100%;
+}
+
+.user-content__blog-paragraph {
+
+}
+
+.user-content__blog {
+    padding-top: 10px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.user-content__post {
+
+}
+
+.post {
     border: 1px solid #000;
+}
+
+.main__monetized-content {
+    width: 15%;
+    border: 1px solid #000;
+}
+
+.monetized-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.monetized-content__photo-link {
+    width: 100%;
+}
+
+.monetized-content__photo {
+    width: 100%;
+}
+
+.warning {
+    margin: 5px;
+    color: red;
+    font-size: 25px;
 }
 
 .footer {
@@ -206,5 +293,35 @@
 @media (max-height: 500px) {
     .header {
         height: 50px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .warning {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .warning {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .warning {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .warning {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .warning {
+        font-size: 10px;
     }
 }
