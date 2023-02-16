@@ -4,4 +4,6 @@
 
 Макет сайта.
 
-![avatar](./template.bmp)
+![avatar](src/template.bmp)
+bla-bla-bla
+blo-blo-blo
