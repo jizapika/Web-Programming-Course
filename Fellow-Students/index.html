@@ -6,57 +6,58 @@
     <meta name="description" content="Здесь вы можете обсудить всё, что угодно со своими однокурсниками. От политики вуза до цвета подаренных носков на 23 февраля. Найди своих однокурсников или они найдут тебя раньше!">
 		<link rel="stylesheet" href="styles/cleaner.css">
 		<link rel="stylesheet" href="styles/main.css">
+		<script type="text/javascript" src="scripts/pageStarter.js"></script>
     <title>Однокурсники</title>
 	</head>
 	<body class="page">
 		<div class="page__head header">
-			<div class="page__left-head left-header">
-				<a class="left-header__logo logo" href="http://github.com/jizapika" target="_blank">
-					<img
-									class="logo__img"
-									 src="images/logo.jpg"
-									alt=""
-					>
+		<div class="page__left-head left-header">
+			<a class="left-header__logo logo" href="http://github.com/jizapika" target="_blank">
+				<img
+								class="logo__img"
+								src="images/logo.jpg"
+								alt=""
+				>
+			</a>
+			<div class="left-header__elem simple-block">
+				<a class="left-header__user-name user-name" href="index.html">
+					<p class="user-name__text">
+						Лев Чечулин
+					</p>
 				</a>
-				<div class="left-header__elem simple-block">
-					<a class="left-header__user-name user-name" href="http://localhost:63342/Web-Programming-Course/Fellow-Students/index.html">
-						<p class="user-name__text">
-							Лев Чечулин
-						</p>
-					</a>
-				</div>
-				<div class="left-header__elem simple-block">
-					<a class="left-header__friends user-friends" href="http://localhost:63342/Web-Programming-Course/Fellow-Students/index.html">
-						<p class="user-friends__text">
-							Друзья
-						</p>
-					</a>
-				</div>
-				<div class="left-header__elem simple-block">
-					<a class="left-header__messages user-messages" href="http://localhost:63342/Web-Programming-Course/Fellow-Students/index.html">
-						<p class="user-messages__text">
-							Сообщения
-						</p>
-					</a>
-				</div>
-				<div class="left-header__elem simple-block">
-					<a class="left-header__settings settings" href="http://localhost:63342/Web-Programming-Course/Fellow-Students/index.html">
-						<p class="settings__text">
-							Настройки
-						</p>
-					</a>
-				</div>
 			</div>
-			<div class="page__right-head right-header">
-				<a href="http://localhost:63342/Web-Programming-Course/Fellow-Students/index.html">
-					<img
-									class="header-user-avatar"
-									src="images/avatar.jpg"
-									alt=""
-					>
+			<div class="left-header__elem simple-block">
+				<a class="left-header__friends user-friends" href="friends.html">
+					<p class="user-friends__text">
+						Друзья
+					</p>
+				</a>
+			</div>
+			<div class="left-header__elem simple-block">
+				<a class="left-header__messages user-messages" href="messages.html">
+					<p class="user-messages__text">
+						Сообщения
+					</p>
+				</a>
+			</div>
+			<div class="left-header__elem simple-block">
+				<a class="left-header__settings settings" href="settings.html">
+					<p class="settings__text">
+						Настройки
+					</p>
 				</a>
 			</div>
 		</div>
+		<div class="page__right-head right-header">
+			<a href="index.html">
+				<img
+								class="header-user-avatar"
+								src="images/avatar.jpg"
+								alt=""
+				>
+			</a>
+		</div>
+	</div>
 		<div class="page__main main">
 			<div class="main__about-user information-block">
 				<div class="main__user-information user-information">
@@ -256,6 +257,9 @@
 		</div>
 		<div class="footer">
 			copyright ITMOStudents
+			<br/>
+			Страница была загружена за <span id="download speed"></span> ms
+			<script type="text/javascript" src="scripts/footer-stopwatch.js"></script>
 		</div>
 	</body>
 </html>
