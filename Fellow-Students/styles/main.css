@@ -101,13 +101,13 @@
     width: 100%;
 }
 
-.settings {
+.user-settings {
     display: flex;
     align-items: center;
     justify-items: center;
 }
 
-.settings__text {
+.user-settings__text {
     margin: auto;
 }
 
