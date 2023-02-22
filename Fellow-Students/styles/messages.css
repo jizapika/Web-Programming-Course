@@ -139,9 +139,31 @@
 
 .main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     background-color: #37b391;
+}
+
+.main__messages {
+    max-width: 50%;
+}
+
+.messages-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: cyan;
+}
+
+.messages-block__paragraph {
+    margin: 10px auto 0 auto;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.messages {
+
 }
 
 .footer {
